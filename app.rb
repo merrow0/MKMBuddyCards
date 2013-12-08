@@ -9,6 +9,7 @@ BASE_MKM_URL = "https://www.magickartenmarkt.de/"
 # 38001->JJ, 39433->Lukas, 39249->Peter
 USER_ID = [	["38738", "Bruno"],
 			["37088", "Jochen"],
+			["117171", "Jacky"],
 			["38001", "JJ"],
 			["39433", "Lukas"],
 			["37873", "Marc"],
