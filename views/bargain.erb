@@ -1,0 +1,25 @@
+
+<div class="page-header">
+	<h1>Top 10 cards</h1>
+</div>
+
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Card name</th>
+        <th>Prize</th>
+      </tr>
+    </thead>
+    <tbody>
+    	<% @rows.each do |row| %>
+    	<tr>
+    		<td>
+    			<a href=<%= '"' + "https://www.magickartenmarkt.de/" + row.css(".col_2 a")[0]["href"] + '"' %>>
+    				<%= row.css(".col_2 a").text %>
+    			</a>
+    		</td>
+        	<td><%= row.css(".col_3").text %></td>
+      	</tr>
+      	<% end %>
+    </tbody>
+</table>

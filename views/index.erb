@@ -1,69 +1,21 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>BuddyCards</title>
-		
-		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
-		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script type="text/javascript" src="bootstrap.js"></script>
-	</head>
-	
-	<body>
-		<script>
-			$('#myTab a').click(function (e) {
-			  e.preventDefault()
-			  $(this).tab('show')
-			})
-		</script>
-		
-		<ul class="nav nav-tabs" id="myTab">
-		  <li><a href="#home" data-toggle="tab">Home</a></li>
-		  <li><a href="#dropdown1" data-toggle="tab">Profile</a></li>
-		  <li><a href="#dropdown2" data-toggle="tab">Messages</a></li>
-		</ul>
 
-		<div class="tab-content">
-			<div class="tab-pane active" id="home">
-				<div class="page-header">
-					<h1>Kartensuche</h1>
-	        	</div>
-	        	<div class="starter-template">
-	        		<form class="form-horizontal" action="/" method="post">
-						<div class="form-group">
-							<label for="card" class="col-sm-2 control-label">Karte</label>
-							<div class="col-sm-5">
-						 		<input class="form-control" id="card" name="card" type="text">
-						 	</div>
-						</div>
-					
-						<div class="form-group">
-			    			<div class="col-sm-offset-2 col-sm-10">
-			      				<button type="submit" class="btn btn-default">Suchen</button>
-			    			</div>
-						</div>
-					</form>
-	        	</div>
-	      	</div>
-		    
-	      	<div class="tab-pane" id="dropdown1">
-            	<p>
-          	  		Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.
-            	</p>
-          	</div>
-          
-          	<div class="tab-pane" id="dropdown2">
-           		<p>
-          			Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.
-          		</p>
-        	</div>
+<div class="page-header">
+	<h1>Suche bei Buddies</h1>
+</div>
+
+<div class="starter-template">
+	<form class="form-horizontal" action="/" method="post">
+		<div class="form-group">
+			<label for="card" class="col-sm-1 control-label">Karte</label>
+			<div class="col-sm-4">
+		 		<input class="form-control" id="card" name="card" type="text">
+		 	</div>
 		</div>
-		
-	    <div id="footer">
-			<div class="container">
-				<p class="text-muted">Copyright 2013</p>
+	
+		<div class="form-group">
+			<div class="col-sm-offset-1 col-sm-10">
+  				<button type="submit" class="btn btn-default">Suchen</button>
 			</div>
-	    </div>
-	</body>
-</html>
+		</div>
+	</form>
+</div>

@@ -59,3 +59,14 @@ post '/' do
 
 	erb :result
 end
+
+get '/about' do
+	erb :about
+end
+
+get '/bargain' do
+	page = Nokogiri::HTML(open(BASE_MKM_URL, :ssl_verify_mode => OpenSSL::SSL::VERIFY_NONE))
+	@rows = page.css(".startPage_Middle .startPageTable tbody tr")
+
+	erb :bargain
+end
